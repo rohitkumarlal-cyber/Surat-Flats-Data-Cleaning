@@ -82,21 +82,21 @@ This follows the **Raw → Clean → Analytics** pipeline used by data engineers
 ##  Business Questions Answered
 
 --What is the average price of flats in each location
-
-
-
-## Dashboard
-
-A business dashboard will visualize:
-
-* KPI cards (avg price, avg area, total listings)
-* Price vs Area analysis
-* Location-based pricing insights
-* Buyer preference trends
+--Which locations have the most expensive properties (Top 10)
+--What is the average price per sqft by area type
+--Which locations give the best value for money (lowest price per sqft)
+--Which locations are overpriced
+--What is the price difference between furnished vs unfurnished homes
+--outliers (suspiciously expensive or cheap flats)
+--Luxury and budget flats 
 
 ---
 
-## 🚀 What I Learned
+## Dashboard
+
+Done in Power BI
+
+##  What I Learned
 
 This project helped me practice:
 
@@ -107,7 +107,7 @@ This project helped me practice:
 
 ---
 
-## 🤝 Connect
+##  Connect
 
 If you have feedback or suggestions, feel free to connect or open an issue.
 
