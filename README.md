@@ -61,7 +61,7 @@ Main cleaning steps:
 
 ---
 
-## 🗄 Database Workflow (PostgreSQL)
+## Database Workflow (PostgreSQL)
 
 ### Step 1 — Raw Table Creation
 
@@ -81,30 +81,9 @@ This follows the **Raw → Clean → Analytics** pipeline used by data engineers
 
 ##  Business Questions Answered
 
-### Market Overview
+--What is the average price of flats in each location
 
-* Average property price across the city
-* Average price per square foot
-* Most common BHK type in the market
 
-### Location Analysis
-
-* Average price by location
-* Most expensive and affordable areas
-* Locations with highest property supply
-
-### Investment Insights
-
-* Price per sqft by location
-* Relationship between area and price
-* Identification of premium vs budget markets
-
-### Customer Preferences
-
-* Furnishing distribution
-* Most popular flat configurations
-
----
 
 ## Dashboard
 
