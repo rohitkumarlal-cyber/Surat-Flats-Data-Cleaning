@@ -1,18 +1,18 @@
 SELECT * FROM flats;
--- What is the average price of flats in each location
+-- 1-> What is the average price of flats in each location
 
 SELECT property_location, AVG(price_val) 
 FROM flats 
 GROUP BY property_location;
 
--- 1-> Which locations have the most expensive properties (Top 10)
+-- 2-> Which locations have the most expensive properties (Top 10)
 
 SELECT property_location, area_sqft, price_val
 FROM flats
 ORDER BY price_val DESC
 LIMIT 10;
 
--- 2-> What is the average price per sqft by area type
+-- 3-> What is the average price per sqft by area type
 
 SELECT area_type , AVG(price_per_sqft_val) AS "average price per sqft"
 FROM flats
@@ -49,7 +49,7 @@ WHERE furnishing IN ('Furnished', 'Unfurnished')
 GROUP BY furnishing
 ORDER BY "Average Price" DESC;
 
--- outliers (suspiciously expensive or cheap flats)
+-- 7-> outliers (suspiciously expensive or cheap flats)
 
 SELECT 
     property_name,
@@ -67,7 +67,7 @@ WHERE
     (price_val <= 100000 AND area_sqft > 1000)
 ORDER BY price_val DESC;
 	
--- 7-> Luxury and budget flats 
+-- 8-> Luxury and budget flats 
 
 SELECT 
     property_location,
@@ -75,4 +75,5 @@ SELECT
     COUNT(CASE WHEN price_val <= 10000000 THEN 1 END) AS "budget count"
 FROM flats
 GROUP BY property_location;
+
 
